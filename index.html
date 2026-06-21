@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunyi Ma's Webpage</title>
+
+
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -89,6 +91,13 @@
             max-width: 100%;
             height: auto;
         }
+        html.js section > :not(h2) {
+            display: none;
+        }
+
+        html.js section > .section-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +106,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#Talks">Talks</a></li>
                 <li><a href="#Teachings">Teachings</a></li>
                 <li><a href="#notes">Notes</a></li>
@@ -111,7 +121,7 @@
             <img src="images/me.jpg" alt="Picture of Kunyi Ma"  style="width:200px;">
             <p>
                 Hi, this is Kunyi (Mark) Ma 马坤一, a Mathematician in PDE Analysis.<br>
-                I'm currently a second year <strong>Columbia University Mathematics PhD Candidate</strong>. My advisors are
+                I'm a <strong>Columbia University Mathematics PhD Candidate</strong>. My advisors are
                 <a href="https://www.math.columbia.edu/~desilva/" target="_blank">Daniela De Silva</a>
                 and <a href="https://www.math.columbia.edu/~savin/" target="_blank">Ovidiu Savin</a>.<br>
                 I graduated from <strong>New York University Shanghai</strong> in January 2024 with a Bachelor of Science in Honors Mathematics and Data Science (Mathematics Concentration). My Senior Thesis mentors are
@@ -119,6 +129,19 @@
                 Here is my <a href="documents/CV.pdf" target="_blank">personal CV</a>.
             </p>
         </div>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+        <p>
+            <strong>1.</strong>
+            Nicholas Gismondi, Kunyi (Mark) Ma, Mandon Pathak, Alexandru F. Radu.<br>
+            <em>Non-unique solutions to the periodic gKdV equation.</em><br>
+            <a href="https://arxiv.org/abs/2606.06916"
+               target="_blank"
+               rel="noopener noreferrer">arXiv:2606.06916</a>
+            [math.AP]. Submitted, 2026.
+        </p>
     </section>
 
     <section id="Talks">
@@ -181,7 +204,7 @@
 
         <h4>Love Life</h4>
         <p>
-            My girlfriend is Lillian Zhang, third year NYU Math PhD candidate. We've gone through a lot in our days at New York, from Century Park to Flushing, from Newport to Coney Island. We buried ourselves in the love tales at Seattle as well as in the forest and valleys at Yellowstone. Our anniversary is October 7th.
+            My girlfriend is Lillian Zhang, NYU Math PhD candidate. We've gone through a lot in our days at New York, from Century Park to Flushing, from Newport to Coney Island. We buried ourselves in the love tales at Seattle as well as in the forest and valleys at Yellowstone. Our anniversary is October 7th.
             <br></br>
             <img src="images/small_me.jpg" alt="Kunyi in 2006" style="width:200px;">
         </p>
@@ -191,9 +214,6 @@
 
         <h4>Literature</h4>
         <p>I served as President of Literature Club at NYU Shanghai (2021–2022), and Vice President at Nanyang Model High School (2018–2019).</p>
-
-        <h4>Film</h4>
-        <p>I watched 21 films in a single week at the 12th Beijing International Film Festival.</p>
     </section>
 
     <footer>
