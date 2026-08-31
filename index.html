@@ -45,6 +45,33 @@
             font-weight: bold;
         }
 
+        /* Keep links visible without covering the page in browser-default blue. */
+        section a,
+        section a:visited {
+            color: inherit;
+            text-decoration-line: underline;
+            text-decoration-color: #8fa8bd;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+            text-decoration-skip-ink: auto;
+            transition: color 0.18s ease,
+                        text-decoration-color 0.18s ease,
+                        background-color 0.18s ease;
+        }
+
+        section a:hover {
+            color: #003366;
+            background-color: #edf3f7;
+            text-decoration-color: #003366;
+        }
+
+        section a:focus-visible,
+        nav a:focus-visible {
+            outline: 2px solid #8fb7d7;
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
         section {
             padding: 40px 10%;
             border-bottom: 1px solid #ddd;
@@ -77,7 +104,7 @@
             display: inline-block;
             margin: 10px 15px;
             text-decoration: none;
-            color: #004080;
+            color: inherit;
         }
 
         footer {
@@ -180,6 +207,8 @@
         <h3>Conference and Workshops</h3>
         <div class="Talks-links">
             <ul>
+                <li><a href="https://sites.google.com/view/first-bsam-conference/detailed-program?authuser=0" target="_blank">Black Swan Academy of Mathematics: Conference on Geometric Analysis and PDEs, The University of Western Australia, Aug. 20th 2026</a>
+                    (<a href="documents/20260820.pdf" target="_blank">Slides</a>)</li>
                 <li><a href="https://aimsconference.org/AIMS-Conference/conf-reg2026/ss/Schedule3311.php?block=PS02&ssid=134&first_name=Kunyi%20(Mark)&last_name=Ma" target="_blank">The 15th AIMS Conference, Athens, Greece, July 10th 2026</a>
                     (<a href="documents/20260710.pdf" target="_blank">Slides</a>)</li>
                 <li><a href="https://sites.google.com/brown.edu/amsgradconference/home" target="_blank">AMS New England Graduate Student Conference 2026, Brown University, Apr. 12th 2026</a>
