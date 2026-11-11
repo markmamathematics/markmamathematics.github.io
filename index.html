@@ -1,286 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunyi Ma's Webpage</title>
-
-
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            color: #2b2b2b;
-            background-color: #f9f9f9;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #002855;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.7em;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Keep links visible without covering the page in browser-default blue. */
-        section a,
-        section a:visited {
-            color: inherit;
-            text-decoration-line: underline;
-            text-decoration-color: #8fa8bd;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 0.2em;
-            text-decoration-skip-ink: auto;
-            transition: color 0.18s ease,
-                        text-decoration-color 0.18s ease,
-                        background-color 0.18s ease;
-        }
-
-        section a:hover {
-            color: #003366;
-            background-color: #edf3f7;
-            text-decoration-color: #003366;
-        }
-
-        section a:focus-visible,
-        nav a:focus-visible {
-            outline: 2px solid #8fb7d7;
-            outline-offset: 3px;
-            border-radius: 2px;
-        }
-
-        section {
-            padding: 40px 10%;
-            border-bottom: 1px solid #ddd;
-        }
-
-        section h2 {
-            color: #003366;
-            margin-top: 0;
-        }
-
-        .about-container {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .about-container img {
-            max-width: 200px;
-            border-radius: 8px;
-            border: 2px solid #ccc;
-        }
-
-        .about-container p {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .photo-links a {
-            display: inline-block;
-            margin: 10px 15px;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #002855;
-            color: white;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        html.js section > :not(h2) {
-            display: none;
-        }
-
-        html.js section > .section-content {
-            display: block;
-        }
-        .preprint-list {
-    padding-left: 2em;
-    margin: 0;
-        }
-.preprint-list > li {
-    margin-bottom: 1.5em;
-    padding-left: 0.4em;
-}
-.preprint-list > li::marker {
-    font-weight: bold;
-}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kunyi (Mark) Ma, mathematics PhD candidate at Columbia University.">
+  <title>Kunyi Ma | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Kunyi Ma's Webpage</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#Talks">Talks</a></li>
-                <li><a href="#Teachings">Teachings</a></li>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#life">My Life</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="images/me.jpg" alt="Picture of Kunyi Ma"  style="width:200px;">
-            <p>
-                Hi, this is Kunyi (Mark) Ma 马坤一, a Mathematician in PDE Analysis.<br>
-                I'm a <strong>Columbia University Mathematics PhD Candidate</strong>. My advisors are
-                <a href="https://www.math.columbia.edu/~desilva/" target="_blank">Daniela De Silva</a>
-                and <a href="https://www.math.columbia.edu/~savin/" target="_blank">Ovidiu Savin</a>.<br>
-                I graduated from <strong>New York University Shanghai</strong> in January 2024 with a Bachelor of Science in Honors Mathematics and Data Science (Mathematics Concentration). My Senior Thesis mentors are
-                <a href="https://wp.nyu.edu/nyushanghai-vn/" target="_blank">Vahagn Nersesyan</a> and Zhuang Su.<br>
-                Here is my <a href="documents/CV.pdf" target="_blank">personal CV</a>.
-            </p>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Kunyi Ma</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; Academic Visits</a>
+        <a href="notes.html">Notes</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="outside-math.html">Outside Math</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="home" tabindex="-1">
+<section class="home-intro" aria-labelledby="name">
+      <div class="intro-copy">
+        <h1 id="name">Kunyi Ma <span lang="zh">马坤一</span></h1>
+        <p class="intro">I am Kunyi (Mark) Ma, a PhD candidate in mathematics at Columbia University, advised by
+          <a href="https://www.math.columbia.edu/~desilva/">Daniela De Silva</a> and
+          <a href="https://www.math.columbia.edu/~savin/">Ovidiu Savin</a>.</p>
+      </div>
+      <img class="portrait" src="images/me.jpg" alt="Kunyi Ma standing beside pink roses" width="1200" height="1600" fetchpriority="high">
     </section>
-
-    <section id="research">
-        <h2>Preprints</h2>
-    
-        <ol id="preprint-list" class="preprint-list">
-            <!-- Always place the newest preprint first -->
-            <li>
-                Kunyi (Mark) Ma.
-                <em>
-                    A Short Proof of Optimal Regularity for minimizers of the
-                    Alt-Phillips Problem.
-                </em><br>
-                <a href="https://arxiv.org/abs/2607.08685"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    arXiv:2607.08685
-                </a>
-                [math.AP]. Submitted, 2026.
-            </li>
-    
-            <li>
-                Nicholas Gismondi, Kunyi (Mark) Ma, Mandon Pathak,
-                Alexandru F. Radu.
-                <em>Non-unique solutions to the periodic gKdV equation.</em><br>
-                <a href="https://arxiv.org/abs/2606.06916"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    arXiv:2606.06916
-                </a>
-                [math.AP]. Submitted, 2026.
-            </li>
-        </ol>
-    </section>
-
-    <section id="Talks">
-        <h2>Talks</h2>
-        <h3>Conference and Workshops</h3>
-        <div class="Talks-links">
-            <ul>
-                <li><a href="https://sites.google.com/view/first-bsam-conference/detailed-program?authuser=0" target="_blank">Black Swan Academy of Mathematics: Conference on Geometric Analysis and PDEs, The University of Western Australia, Aug. 20th 2026</a>
-                    (<a href="documents/20260820.pdf" target="_blank">Slides</a>)</li>
-                <li><a href="https://aimsconference.org/AIMS-Conference/conf-reg2026/ss/Schedule3311.php?block=PS02&ssid=134&first_name=Kunyi%20(Mark)&last_name=Ma" target="_blank">The 15th AIMS Conference, Athens, Greece, July 10th 2026</a>
-                    (<a href="documents/20260710.pdf" target="_blank">Slides</a>)</li>
-                <li><a href="https://sites.google.com/brown.edu/amsgradconference/home" target="_blank">AMS New England Graduate Student Conference 2026, Brown University, Apr. 12th 2026</a>
-                    (<a href="documents/20260411.pdf" target="_blank">Slides</a>)</li>
-                 <li><a href="https://sites.google.com/view/hapdes-workshop/home" target="_blank">Workshop on Harmonic Analysis and Partial Differential Equations, University of Pittsburg, Nov. 15th 2025</a>
-                    (<a href="images/20251115.jpg" target="_blank">Poster</a>)</li>
-                </ul>
-        </div>
-
-        <h3>Seminars</h3>
-        <div class="Talks-links">
-            <ul>
-                <li><a href="documents/seminar_on_hyperbolic_conservation_laws.JPG" target="_blank">Seminar on Hyperbolic Conservation Laws, Shanghai Normal University, July 29th 2026</a>
-                    (<a href="documents/20260729.pdf" target="_blank">Slides</a>)</li>
-                <li>Graduate Student Analysis Seminar, Purdue University, Apr. 28th 2026 
-                    (<a href="documents/20260428.pdf" target="_blank">Slides</a>)</li>
-                <li><a href="https://math.nyu.edu/dynamic/calendars/seminars/student-analysis-seminar/4457/" target="_blank">Student Analysis Seminar, Courant Institute NYU, Apr. 20th 2026</a></li>
-                <li><a href="https://alviszahl.com/pdecoffee.html" target="_blank">Online PDE Coffee Chat</a>
-                    (<a href="documents/Introduction to Elliptic PDEs Part I.pdf" target="_blank">Slides(Mar. 14th 2026)</a>, <a href="documents/Introduction to Elliptic PDEs Part II.pdf" target="_blank">Slides(Mar. 21st 2026)</a>)
-                </li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section id="Teachings">
-        <h2>Teaching Assistant</h2>
-        <p>APMA4105 Applied Functional Analysis (Spring 2026, Michael Weinstein)</p>
-        <p>UN2030 Ordinary Differential Equations (Spring 2026, Jeanne Boursier)</p>
-        <p>GR6151 Analysis & Probability I (Fall 2025, Ivan Corwin)</p>
-        <p><a href="documents/_Carneiro25Summer__Intro_to_Modern_Analysis_I.pdf">S4061 Introduction to Modern Analysis I (Summer 2025 A, Andre Carneiro)</a></p>
-    </section>
-
-    <section id="notes">
-        <h2>Mathematics Notes</h2>
-
-        <p>   This is a selection of my notes for the Columbia Mathematics
-            qualification exam.
-        </p>
-        <ul>
-            <li><a href="documents/Elliptic_PDEs.pdf">Elliptic PDEs.</a></li>
-            <li><a href="documents/Geometry.pdf">Geometry.</a></li>
-        </ul>
-        
-        <p>   This is Lecture Notes from Columbia University. </p>
-        <ul>
-            <li><a href="documents/_2025Phong__Complex_Geometry.pdf">Complex Geometry (Spring 2025, Duong Phong)</a></li>
-            <li><a href="documents/_2025Giorgi__Modern_Geometry_II.pdf">Modern Geometry II (Spring 2025, Elena Giorgi)</a></li>
-            <li><a href="documents/_2024Weinstein__Analytic_Methods_for_Partial_Differential_Equations.pdf">Analytic Methods for PDEs (Fall 2024, Michael Weinstein)</a></li>
-            <li><a href="documents/_2024Liu__Modern_Geometry_I.pdf">Modern Geometry I (Fall 2024, Melissa Liu)</a></li>
-        </ul>
-    </section>
-
-    <section id="life">
-        <h2>My Life & Hobbies</h2>
-
-        <h4>Love Life</h4>
-        <p>
-            My girlfriend is Lillian Zhang, NYU Math PhD candidate. We've gone through a lot in our days at New York, from Century Park to Flushing, from Newport to Coney Island. We buried ourselves in the love tales at Seattle as well as in the forest and valleys at Yellowstone. Our anniversary is October 7th.
-            <br></br>
-            <img src="images/small_me.jpg" alt="Kunyi in 2006" style="width:200px;">
-        </p>
-
-        <h4>Vocal</h4>
-        <p>I sang Tenor 1 for Elite A Cappella (Octave Fusion) at NYU Shanghai from Spring 2021 to Fall 2022, trained by Katherine Girvin and Gabriel Song. This was among my most precious memories in undergraduate years.</p>
-
-        <h4>Literature</h4>
-        <p>I served as President of Literature Club at NYU Shanghai (2021–2022), and Vice President at Nanyang Model High School (2018–2019).</p>
-    </section>
-
-    <footer>
-        <p>&copy; Kunyi Ma</p>
-    </footer>
+    <details class="academic-background">
+      <summary>Undergraduate</summary>
+      <p>I graduated from <a href="https://shanghai.nyu.edu/content/honors-mathematics">New York University Shanghai</a> in January 2024 with a Bachelor of Science in Honors Mathematics and Data Science (Mathematics Concentration).
+        My senior thesis mentors were <a href="https://wp.nyu.edu/nyushanghai-vn/">Vahagn Nersesyan</a> and Zhuang Su.</p>
+    </details>
+    <details class="academic-background">
+      <summary>Before undergraduate</summary>
+      <p>I grew up in Xuhui District, Shanghai, and attended <a href="https://hsxx.xhedu.sh.cn/cms/">Huishi Elementary School</a>, <a href="https://wuu.wikipedia.org/wiki/上海市徐汇中学">Xuhui Middle School</a>, and then <a href="https://nmzx.xhedu.sh.cn/cms/">Nanyang Model High School</a>. During the 2010–2011 academic year, I attended <a href="https://www.ps173q.org">P.S. 173 Elementary School</a> in New York.</p>
+    </details>
+  </main>
+  <footer class="site-footer"><p>&copy; Kunyi Ma</p></footer>
 </body>
 </html>

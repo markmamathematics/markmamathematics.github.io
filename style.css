@@ -1,0 +1,135 @@
+/* Shared by every page. Cambria uses a local font with serif fallbacks. */
+:root {
+  --font-family: Cambria, "Times New Roman", serif;
+  --paper: #faf9f6;
+  --ink: #222e32;
+  --muted: #5c6669;
+  --accent: #264e63;
+  --line: #dcded9;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-family);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .22em;
+  text-decoration-color: #8b9fa8;
+}
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible, main:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  padding: .5rem 1rem;
+  background: var(--paper);
+  z-index: 10;
+}
+.skip-link:focus { top: .5rem; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner {
+  max-width: 1040px;
+  margin: auto;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.site-name {
+  color: var(--ink);
+  font: bold 25px/1.2 var(--font-family);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-header nav { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.site-header nav a {
+  padding: 6px 13px;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 24px;
+  white-space: nowrap;
+}
+.site-header nav a:hover { background: #e9edec; color: var(--accent); }
+.site-header nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+main { max-width: 960px; margin: 0 auto; padding: 65px 32px 64px; }
+h1, h2, h3 { font-family: var(--font-family); line-height: 1.25; }
+h1 { margin: 0 0 30px; font-size: 52px; font-weight: normal; letter-spacing: -.035em; }
+h2 { margin: 0 0 20px; font-size: 28px; font-weight: normal; letter-spacing: -.02em; }
+h3 { margin: 30px 0 16px; font-size: 20px; font-weight: normal; }
+p { margin: 0 0 20px; }
+section { scroll-margin-top: 24px; }
+.page > section { padding-top: 36px; margin-top: 36px; border-top: 1px solid var(--line); }
+.page-links { display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 14px; }
+.page ul { padding-left: 1.3em; }
+.page li { margin-bottom: 16px; padding-left: .25em; }
+.preprint-list { padding-left: 1.5em; }
+.preprint-list > li { padding-left: .5em; margin-bottom: 28px; }
+.preprint-list > li::marker { color: var(--muted); }
+.preprint-list em { font-style: italic; }
+.home { padding-top: 76px; padding-bottom: 82px; }
+.home-intro { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 64px; align-items: center; }
+.home h1 { font-size: 66px; margin-bottom: 28px; }
+.home h1 span { display: block; font-size: 25px; font-weight: normal; letter-spacing: .1em; color: var(--muted); margin-top: 12px; }
+.intro { font-size: 21px; line-height: 1.65; }
+.portrait { display: block; width: 270px; max-width: 100%; height: auto; border: 1px solid var(--line); }
+.cv-link { margin: 26px 0 0; font-size: 15px; }
+.file-label { font-size: 12px; }
+.life-content { max-width: 760px; }
+.life-content h2 { margin-top: 42px; }
+.life-content h2:first-child { margin-top: 0; }
+.childhood { margin: 28px 0 36px; }
+.childhood img { display: block; width: 200px; max-width: 100%; height: auto; }
+figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
+.site-footer { max-width: 896px; margin: 0 auto; border-top: 1px solid var(--line); padding: 22px 0 30px; color: var(--muted); font-size: 13px; }
+.site-footer p { margin: 0; }
+img { max-width: 100%; }
+.academic-background { margin-top: 38px; max-width: 760px; }
+.academic-background summary { cursor: pointer; color: var(--accent); font-size: 15px; }
+.academic-background summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.academic-background p { margin: 16px 0 0; }
+@media (max-width: 940px) {
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .site-header nav { margin-left: -13px; }
+}
+@media (max-width: 760px) {
+  .header-inner { padding: 18px 24px; }
+  main { padding: 40px 24px 48px; }
+  .home { padding-top: 44px; padding-bottom: 48px; }
+  .home-intro { grid-template-columns: minmax(0, 1fr) 210px; gap: 30px; }
+  .home h1 { font-size: 48px; }
+  .intro { font-size: 18px; }
+  .portrait { width: 210px; }
+  .site-footer { margin: 0 24px; }
+}
+@media (max-width: 580px) {
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .site-header nav { margin-left: -10px; gap: 2px; }
+  .site-header nav a { padding: 6px 10px; }
+  .home-intro { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .home h1 { font-size: 48px; }
+  .home h1 span { font-size: 22px; }
+  .portrait { width: 240px; }
+  h1 { font-size: 42px; }
+  h2 { font-size: 26px; }
+  .page li { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body { color: #000; background: #fff; font-size: 11pt; }
+  .site-header, .site-footer, .skip-link, .page-links { display: none; }
+  main { max-width: none; padding: 0; }
+  a { color: #000; }
+}
